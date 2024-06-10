@@ -15,6 +15,7 @@ logo_url: https://huling.org/top.svg
 
 locale: ja
 
+collections:
   - name: static
     label: 固定ページ
     description: |
