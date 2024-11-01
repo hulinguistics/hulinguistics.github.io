@@ -64,7 +64,7 @@ body {
     padding: 2rem 2.5rem;
 
     @media (max-width: 680px) {
-      padding: 1.8rem 1.5rem;
+      padding: 1.4rem 1.4rem;
     }
   }
 }
