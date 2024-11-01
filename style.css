@@ -11,13 +11,17 @@
   --width-content: 1000px;
 }
 
-/* TODO: ダークモード */
-/* @media (prefers-color-scheme: dark) {
+/* ダークモード */
+@media (prefers-color-scheme: dark) {
   :root {
     --color-bg: #222;
-    --color-text: #fff;
+    --color-bg-sub: #2c2c2c;
+    --color-text: #f3f3e3;
+    --color-text-sub: #adadad;
+    --color-text-accent: #8fb6d8;
+    --color-divider: #2b2b2b;
   }
-} */
+}
 
 html {
   scroll-behavior: smooth;
