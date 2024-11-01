@@ -1,9 +1,12 @@
+/* Noto Sans Japanese */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+
 :root {
   --color-bg: #fff;
   --color-bg-sub: #f0f0f2;
   --color-text: #222;
   --color-text-sub: #777;
-  --color-text-accent: #3d84c2;
+  --color-text-accent: #3678b3;
   --color-divider: #3341;
   --width-content: 1000px;
 }
@@ -49,7 +52,7 @@ body {
   margin: 0;
   background-color: var(--color-bg);
   color: var(--color-text);
-  font-family: Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 
   > nav, > header, > main, > footer {
     margin: 0 auto;
@@ -76,6 +79,7 @@ body > nav {
   h1 {
     margin-right: auto;
     font-size: 1.2em;
+    font-weight: 800;
   }
 
   a i.fa {
@@ -112,12 +116,13 @@ body > header {
 
     h2 {
       color: var(--color-text-sub);
-      font-weight: normal;
+      font-weight: 500;
       font-size: 1.2em;
     }
 
     p {
       text-align: center;
+      font-size: 0.95em;
     }
   }
 
@@ -152,11 +157,12 @@ body > header {
       }
 
       h3 {
-        font-weight: bolder;
+        font-weight: 600;
         font-size: 1.1em;
       }
 
       p {
+        font-weight: 400;
         color: var(--color-text-sub);
       }
     }
@@ -182,13 +188,14 @@ body > main {
       margin: 0;
       text-align: center;
       font-size: 2.2em;
-      font-weight: bold;
+      font-weight: 900;
       text-transform: uppercase;
     }
 
     h3 {
       font-size: 1.4em;
       padding: 1em 0 0;
+      font-weight: 700;
 
       &:not(:first-of-type) {
         margin-top: 1.5rem;
@@ -209,6 +216,7 @@ body > main {
 
       figcaption {
         color: var(--color-text-sub);
+        font-weight: 400;
       }
     }
   }
