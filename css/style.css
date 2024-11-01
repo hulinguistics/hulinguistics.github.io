@@ -8,7 +8,7 @@
   --color-text-sub: #777;
   --color-text-accent: #3678b3;
   --color-divider: #3341;
-  --width-content: 1000px;
+  --width-content: 990px;
 }
 
 /* ダークモード */
@@ -103,7 +103,7 @@ body > nav {
 
 body > header {
   > * {
-    margin: 0 1rem 1.5rem;
+    margin: 0 0 1.5rem;
   }
 
   hgroup {
@@ -128,6 +128,7 @@ body > header {
     }
 
     p {
+      padding: 0 1rem;
       text-align: center;
       font-size: 0.95em;
     }
