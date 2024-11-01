@@ -1,7 +1,5 @@
 /*/index.html /:splat 301
 /docs/grammar /docs/grammar-terms 301
-/docs/conv* /tools/conv:splat 301
-/docs/tools/conv/ /tools/conv 301
 /docs/languessr https://note.com/xiupos/n/na1d31dbdc862?magazine_key=m8a70e16198cc 301
 /olympiad/about https://note.com/huling/m/mcd1d0bd424ad 301
 /olympiad/aplo2022-1 https://note.com/huling/n/n4a019f6ebfb6?magazine_key=mcd1d0bd424ad 301
@@ -25,6 +23,11 @@
 /docs/nigai-rus https://note.com/xiupos/n/ndd8801567fa6?magazine_key=m23eaa6287db4 301
 /docs/nigai-zho https://note.com/_pccm4/n/nb6b44d53ba01?magazine_key=m23eaa6287db4 301
 /docs/grammar-terms https://note.com/huling/n/nf91fa59c260b?magazine_key=m8a70e16198cc 301
+/tools/conv https://hulinguistics.github.io/conv/ 301
+/docs/tools/conv/ https://hulinguistics.github.io/conv/ 301
+/tools/conv-* https://hulinguistics.github.io/conv/:splat 301
+/docs/conv-* https://hulinguistics.github.io/conv/:splat 301
+/tags https://hulinguistics.github.io/conv/tags 301
 
 /docs/ara https://github.com/hulinguistics/archive/blob/main/docs/ara.md 302
 /docs/fin https://github.com/hulinguistics/archive/blob/main/docs/fin.md 302
