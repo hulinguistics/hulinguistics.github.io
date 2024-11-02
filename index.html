@@ -44,6 +44,7 @@
       href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
     />
     <script defer src="js/footer-year.js"></script>
+    <script defer src="js/magazine.js"></script>
   </head>
 
   <body>
@@ -74,8 +75,8 @@
       </hgroup>
 
       <section class="links">
+        <a href="#magazine">Magazine</a>
         <a href="#about">About us</a>
-        <a href="https://note.com/huling/m/m8a70e16198cc">Magazine</a>
       </section>
 
       <section class="cards">
@@ -102,6 +103,20 @@
     </header>
 
     <main>
+      <section id="magazine">
+        <h2>MAGAZINE</h2>
+          <div id="magazine-container">
+          <!-- 空の mmagazine-card の数だけ note マガジンの最新記事を表示 (js/magazine.js) -->
+          <magazine-card></magazine-card>
+          <magazine-card></magazine-card>
+          <magazine-card></magazine-card>
+          <magazine-card></magazine-card>
+        </div>
+        <a class="magazine-more" href="https://note.com/huling/m/m8a70e16198cc"
+          >もっとみる</a
+        >
+      </section>
+
       <section id="about">
         <h2>About us</h2>
 

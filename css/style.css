@@ -193,7 +193,7 @@ body > main {
     }
 
     h2 {
-      margin: 0;
+      margin: 0 0 1rem;
       text-align: center;
       font-size: 2.2em;
       font-weight: 900;
@@ -202,11 +202,11 @@ body > main {
 
     h3 {
       font-size: 1.4em;
-      padding: 1em 0 0;
       font-weight: 700;
 
       &:not(:first-of-type) {
         margin-top: 1.5rem;
+        padding-top: 1em;
         border-top: solid var(--color-divider) 1px;
       }
     }
@@ -225,6 +225,34 @@ body > main {
       figcaption {
         color: var(--color-text-sub);
         font-weight: 400;
+      }
+    }
+
+    #magazine-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
+      gap: 2rem 1rem;
+
+      @media (max-width: 680px) {
+        font-size: 0.8em;
+      }
+
+      /* 子要素のスタイルは js/magazine.js 内で定義 (ShadowDOM) */
+    }
+
+    .magazine-more {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 1rem 0;
+      border: solid var(--color-bg-sub) 3px;
+      color: var(--color-text);
+      transition: 200ms;
+
+      &:hover {
+        text-decoration: none;
+        background: var(--color-bg-sub);
       }
     }
   }
