@@ -28,7 +28,7 @@ const dummyLink = url;
 /**
  * 相対的な時間差を表す文字列("1日前")を取得する関数
  * @param {Date} targetDate 調べる対象の時刻 i.e., 記事公開日
- * @param {Date} basetDate 基準の時刻 i.e., 現在の時刻
+ * @param {Date} baseDate 基準の時刻 i.e., 現在の時刻
  */
 const relDateString = (targetDate, baseDate) => {
   const rtf = new Intl.RelativeTimeFormat("ja");
@@ -54,7 +54,20 @@ const relDateString = (targetDate, baseDate) => {
   }
 }
 
-/** マガジンのカードの WebComponents */
+/**
+ * マガジンのカードの WebComponents
+ *
+ * ```html
+ * <magazine-card
+ *  title="タイトル"
+ *  thumbnail="https://(サムネイル画像のURL)"
+ *  creatorImage="https://(クリエイター画像のURL)"
+ *  creatorName="クリエイター名"
+ *  date="(投稿日時)"
+ *  link="https://(記事URL)"
+ * ></magazine-card>
+ * ```
+ */
 class MagazineCard extends HTMLElement {
   constructor() {
     super();
