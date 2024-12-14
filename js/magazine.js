@@ -104,7 +104,7 @@ class MagazineCard extends HTMLElement {
           grid-template-columns: 2em 1fr auto;
           align-items: center;
           text-decoration: none;
-          gap: 0.8rem 0.5rem;
+          gap: 0.6rem 0.5rem;
 
           .thumbnail {
             grid-row: 1 / 2;
@@ -126,6 +126,7 @@ class MagazineCard extends HTMLElement {
             margin: 0;
             padding: 0;
             color: ${dummyMode ? "var(--color-bg-sub)" : "var(--color-text)"};
+            line-height: 1.4;
             word-wrap: ${dummyMode ? "break-word" : "inherit"};
           }
 
