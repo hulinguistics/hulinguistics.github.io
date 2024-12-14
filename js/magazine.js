@@ -4,7 +4,7 @@
 const url = "https://note.com/huling/m/m8a70e16198cc";
 
 /** 取得する note マガジンの RSS URL */
-const rssUrl = `https://corsproxy.io/?${encodeURIComponent(url + "/rss")}`;
+const rssUrl = `https://corsproxy.io/?url=${encodeURIComponent(url + "/rss")}`;
 
 /** 描画するコンテナの Element */
 const baseElement = document.getElementById("magazine-container");
