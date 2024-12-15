@@ -96,7 +96,7 @@ class MagazineCard extends HTMLElement {
     const relDate = dummyMode ? "" : relDateString(new Date(date), new Date());
 
     // カード内部を書き換え
-    this.shadowRoot.innerHTML = `
+    this.shadowRoot.innerHTML = /*html*/ `
       <style>
         a {
           display: grid;
@@ -153,16 +153,16 @@ class MagazineCard extends HTMLElement {
       </style>
       <a href="${link}">
         ${thumbnail
-          ? `<img class="thumbnail" src="${thumbnail}" alt="${title}" />`
-          : `<div class="thumbnail"></div>`
+          ? /*html*/ `<img class="thumbnail" src="${thumbnail}" alt="${title}" />`
+          : /*html*/ `<div class="thumbnail"></div>`
         }
         <h3>${title}</h3>
         ${creatorImage
-          ? `<img class="creatorImage" src="${creatorImage}" alt="${creatorName}" />`
-          : `<div class="creatorImage"></div>`
+          ? /*html*/ `<img class="creatorImage" src="${creatorImage}" alt="${creatorName}" />`
+          : /*html*/ `<div class="creatorImage"></div>`
         }
         <span class="creatorName">${creatorName}</span>
-        <span class="pubDate">${dummyMode ? date : `<time datetime="${date}">${relDate}</time>`}</span>
+        <span class="pubDate">${dummyMode ? date : /*html*/ `<time datetime="${date}">${relDate}</time>`}</span>
       </a>
     `;
   }
