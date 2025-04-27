@@ -211,7 +211,7 @@ body > main {
       }
     }
 
-    > img, > figure > img {
+    > img, > figure > img, > iframe {
       max-width: 100%;
       margin: 0 auto;
     }
