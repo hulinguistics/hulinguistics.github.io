@@ -211,7 +211,7 @@ body > main {
       }
     }
 
-    > img, > figure > img, > iframe {
+    > img, > figure > img {
       max-width: 100%;
       margin: 0 auto;
     }
@@ -254,6 +254,10 @@ body > main {
         text-decoration: none;
         background: var(--color-bg-sub);
       }
+    }
+
+    .google-calendar > iframe {
+      width: 100%!important;
     }
   }
 }
